@@ -1,7 +1,12 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <style type="text/css">
+    <style type="text/css">
         .width500px{width: 450px; display: inline-block;}
         .center{text-align: center;}
         #startBtn{border: none; color: white; background-color: #5AAFFF; width: 80px;padding: 5px; font-weight: bold; cursor: pointer;}
@@ -13,6 +18,35 @@
         #info{width: 450px; height: 250px; background-color: #DDDDDD; color: white; padding-top: 230px;}
  
         </style>
+</head>
+<body>
+    <body class='center'>
+        <div class='width500px'>
+            <div>
+                <h2>같은 그림 찾기</h2>
+                <table id='menuTable'>
+                    <tr>
+                        <td class='alignLeft'>
+                            <button id='startBtn'>start</button>
+                        </td>
+                        <td class='alignRight'>
+                            <span>score : <span id='score'>0</span></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div id='countDown'>
+                    ready
+                </div>
+                <table id='cardTable'>
+                </table>
+                <div id='info'>
+                    start 버튼을 눌러주세요<br>
+                </div>
+            </div>
+        </div>
+
         <script>
             // 게임 상태
             var gameState = '';
@@ -165,32 +199,5 @@
  
  
         </script>
-    </head>
-    <body class='center'>
-        <div class='width500px'>
-            <div>
-                <h2>같은 그림 찾기</h2>
-                <table id='menuTable'>
-                    <tr>
-                        <td class='alignLeft'>
-                            <button id='startBtn'>start</button>
-                        </td>
-                        <td class='alignRight'>
-                            <span>score : <span id='score'>0</span></span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <div id='countDown'>
-                    ready
-                </div>
-                <table id='cardTable'>
-                </table>
-                <div id='info'>
-                    start 버튼을 눌러주세요<br>
-                </div>
-            </div>
-        </div>
-    </body>
+</body>
 </html>
