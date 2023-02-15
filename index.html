@@ -28,18 +28,18 @@
         // 카드 배치
         function setTable(){
             cards = [
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000101.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000101.png', //이상해씨
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000401.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000401.png', // 파이리
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000701.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000701.png', // 꼬부기
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/002501.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/002501.png', // 피카츄
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/005201.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/005201.png', // 나옹이
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/005401.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/005401.png', // 고라파덕
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/007901.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/007901.png', // 야돈
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/010901.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/010901.png', // 또가스
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/012901.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/012901.png', // 잉어킹
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/013301.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/013301.png', // 이브이
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/014301.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/014301.png', // 잠만보
-            'https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/039301.png','https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/039301.png' // 팽도리
+            '000101.png','000101.png', //이상해씨
+            '000401.png','000401.png', // 파이리
+            '000701.png','000701.png', // 꼬부기
+            '002501.png','002501.png', // 피카츄
+            '005201.png','005201.png', // 나옹이
+            '005401.png','005401.png', // 고라파덕
+            '007901.png','007901.png', // 야돈
+            '010901.png','010901.png', // 또가스
+            '012901.png','012901.png', // 잉어킹
+            '013301.png','013301.png', // 이브이
+            '014301.png','014301.png', // 잠만보
+            '039301.png','039301.png' // 팽도리
             ];
             var cardTableCode = '<tr>';                
             for(var i=0;i<24;i++) {
@@ -49,7 +49,7 @@
                 var idx = generateRandom(0,23-i);
                 var img = cards.splice(idx,1);
 
-                cardTableCode += '<td id="card'+i+'"><img src="'+img+'"><span>?</span></td>';
+                cardTableCode += '<td id="card'+i+'"><img src="https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/'+img+'"><span>?</span></td>';
             }
             cardTableCode += '</tr>';
             $('#cardTable').html(cardTableCode);
